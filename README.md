@@ -61,13 +61,13 @@
 
 ## About The Project
 
-**AI Skills** is a curated collection of **20 AI-powered skills** for AI coding assistants like [Google Antigravity](https://github.com/google/anthropic), [Codex CLI](https://github.com/openai/codex), [Grok Build](https://x.ai), and others. Each skill is a self-contained `SKILL.md` file that teaches your AI assistant specialized workflows — from code review and architecture refactoring to generating images with ComfyUI.
+**AI Skills** is a curated collection of **16 AI-powered skills** for AI coding assistants like [Google Antigravity](https://github.com/google/anthropic), [Codex CLI](https://github.com/openai/codex), [Grok Build](https://x.ai), and others. Each skill is a self-contained `SKILL.md` file that teaches your AI assistant specialized workflows — from code review and architecture refactoring to generating images with ComfyUI.
 
 Key highlights:
-- 🤖 **20 Ready-to-Use Skills** — Drop into any `.agents/skills/` directory and go.
-- 🛡️ **4 Quality Guards** — Automated review for code, tests, docs, and architecture.
-- 🔀 **3 Delegate Skills** — Farm out tasks to Codex, Grok, or a local LLM.
-- 🎨 **3 Design Skills** — Frontend design, UI polish, and architecture visualization.
+- 🤖 **16 Ready-to-Use Skills** — Drop into any `.agents/skills/` directory and go.
+- 🛡️ **3 Quality Guards** — Automated review for code architecture, tests, and docs.
+- 🔀 **1 Delegate Skill** — Farm out tasks to a local LLM.
+- 🎨 **2 Design Skills** — Frontend design and architecture visualization.
 - 🔄 **Automation & Workflow** — Loop execution, Finn CI/CD pipeline, and ComfyUI generation.
 
 ### Skills Catalog
@@ -76,7 +76,6 @@ Key highlights:
 
 | Skill | Description |
 |---|---|
-| [`clean-code-guard`](skills/clean-code-guard/) | Review production code using Clean Code, SOLID, DRY, KISS, and YAGNI principles |
 | [`clean-architecture-guard`](skills/clean-architecture-guard/) | Restructure spaghetti code + enforce SOLID with zero hallucinations |
 | [`test-guard`](skills/test-guard/) | Review test code against universal testing rules before shipping |
 | [`docs-guard`](skills/docs-guard/) | Review documentation for accuracy against source code |
@@ -85,8 +84,6 @@ Key highlights:
 
 | Skill | Description |
 |---|---|
-| [`codex-delegate`](skills/codex-delegate/) | Delegate tasks to OpenAI Codex CLI |
-| [`grok-delegate`](skills/grok-delegate/) | Delegate tasks to Grok Build CLI |
 | [`local-ai-delegate`](skills/local-ai-delegate/) | Delegate to a local llama.cpp model via HTTP API |
 
 #### 🎨 Design & Frontend
@@ -94,7 +91,6 @@ Key highlights:
 | Skill | Description |
 |---|---|
 | [`frontend-design`](skills/frontend-design/) | Distinctive, intentional visual design guidance for new UI |
-| [`impeccable`](skills/impeccable/) | Redesign, polish, audit, and perfect any frontend interface |
 | [`archify`](skills/archify/) | Create architecture, workflow, and sequence diagrams as explorable HTML |
 
 #### 🔄 Automation & Workflow
@@ -193,7 +189,7 @@ Once installed, simply reference the skill by name in your AI assistant:
 
 - [x] Initial repository setup
 - [x] Add comprehensive README
-- [x] Add 20 AI skill files
+- [x] Add 16 AI skill files
 - [ ] Add more AI skill definitions
 - [ ] Create GitHub Actions integration workflows
 - [ ] Add skill testing and validation framework
