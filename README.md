@@ -61,12 +61,12 @@
 
 ## About The Project
 
-**AI Skills** is a curated collection of **25 AI-powered skills** for AI coding assistants like [Google Antigravity](https://github.com/google/anthropic), [Codex CLI](https://github.com/openai/codex), [Grok Build](https://x.ai), and others. Each skill is a self-contained `SKILL.md` file that teaches your AI assistant specialized workflows — from code review and architecture refactoring to generating images with ComfyUI.
+**AI Skills** is a curated collection of **20 AI-powered skills** for AI coding assistants like [Google Antigravity](https://github.com/google/anthropic), [Codex CLI](https://github.com/openai/codex), [Grok Build](https://x.ai), and others. Each skill is a self-contained `SKILL.md` file that teaches your AI assistant specialized workflows — from code review and architecture refactoring to generating images with ComfyUI.
 
 Key highlights:
-- 🤖 **25 Ready-to-Use Skills** — Drop into any `.agents/skills/` directory and go.
-- 🛡️ **6 Quality Guards** — Automated review for code, tests, docs, WordPress, and WooCommerce.
-- 🔀 **6 Delegate Skills** — Farm out tasks to Codex, Grok, Kimi, OpenCode, AGY, or a local LLM.
+- 🤖 **20 Ready-to-Use Skills** — Drop into any `.agents/skills/` directory and go.
+- 🛡️ **4 Quality Guards** — Automated review for code, tests, docs, and architecture.
+- 🔀 **3 Delegate Skills** — Farm out tasks to Codex, Grok, or a local LLM.
 - 🎨 **3 Design Skills** — Frontend design, UI polish, and architecture visualization.
 - 🔄 **Automation & Workflow** — Loop execution, Finn CI/CD pipeline, and ComfyUI generation.
 
@@ -80,18 +80,13 @@ Key highlights:
 | [`clean-architecture-guard`](skills/clean-architecture-guard/) | Restructure spaghetti code + enforce SOLID with zero hallucinations |
 | [`test-guard`](skills/test-guard/) | Review test code against universal testing rules before shipping |
 | [`docs-guard`](skills/docs-guard/) | Review documentation for accuracy against source code |
-| [`wp-guard`](skills/wp-guard/) | Review WordPress plugins, themes, and blocks for security and best practices |
-| [`woo-guard`](skills/woo-guard/) | Review WooCommerce extensions for HPOS compatibility and CRUD discipline |
 
 #### 🔀 Delegate Skills
 
 | Skill | Description |
 |---|---|
-| [`agy-delegate`](skills/agy-delegate/) | Delegate tasks to Google Antigravity CLI as a background implementer |
 | [`codex-delegate`](skills/codex-delegate/) | Delegate tasks to OpenAI Codex CLI |
 | [`grok-delegate`](skills/grok-delegate/) | Delegate tasks to Grok Build CLI |
-| [`kimi-delegate`](skills/kimi-delegate/) | Delegate tasks to Kimi Code CLI |
-| [`opencode-delegate`](skills/opencode-delegate/) | Delegate tasks to OpenCode CLI |
 | [`local-ai-delegate`](skills/local-ai-delegate/) | Delegate to a local llama.cpp model via HTTP API |
 
 #### 🎨 Design & Frontend
@@ -198,7 +193,7 @@ Once installed, simply reference the skill by name in your AI assistant:
 
 - [x] Initial repository setup
 - [x] Add comprehensive README
-- [x] Add 25 AI skill files
+- [x] Add 20 AI skill files
 - [ ] Add more AI skill definitions
 - [ ] Create GitHub Actions integration workflows
 - [ ] Add skill testing and validation framework
