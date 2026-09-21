@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clean Architecture Guard"
+  short_description: "Architecture and clean-code guardrails for AI agents"
+  default_prompt: "Use $clean-architecture-guard before or after code is written to restructure architecture or review it for clean-code issues."

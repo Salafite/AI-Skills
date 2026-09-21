@@ -1,0 +1,34 @@
+{
+  "name": "@salafite/clean-architecture-guard",
+  "version": "1.0.0",
+  "description": "A master opencode/Claude Code skill combining architectural restructuring with strict clean-code quality enforcement. Overhaul spaghetti code, enforce SOLID, move code to correct layers, and catch LLM hallucinations.",
+  "keywords": [
+    "opencode",
+    "claude-code",
+    "skill",
+    "clean-code",
+    "solid",
+    "architecture",
+    "refactoring",
+    "code-review",
+    "ai-agent"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Salafite/Clean-architecture-guard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Salafite/Clean-architecture-guard/issues"
+  },
+  "homepage": "https://github.com/Salafite/Clean-architecture-guard#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "files": [
+    "SKILL.md",
+    "agents/",
+    "references/",
+    "README.md"
+  ]
+}

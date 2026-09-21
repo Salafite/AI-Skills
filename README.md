@@ -61,19 +61,72 @@
 
 ## About The Project
 
-**AI Skills** is a curated collection of AI-powered skills, automation workflows, and intelligent templates designed to supercharge your development process. From code generation and review to automated testing and deployment, this repository provides ready-to-use skills that integrate with modern AI coding assistants.
+**AI Skills** is a curated collection of **25 AI-powered skills** for AI coding assistants like [Google Antigravity](https://github.com/google/anthropic), [Codex CLI](https://github.com/openai/codex), [Grok Build](https://x.ai), and others. Each skill is a self-contained `SKILL.md` file that teaches your AI assistant specialized workflows — from code review and architecture refactoring to generating images with ComfyUI.
 
 Key highlights:
-- 🤖 **AI-Powered Skills** — Ready-to-use skill definitions for AI coding assistants.
-- 🔄 **Automation Workflows** — Streamline repetitive tasks with intelligent automation.
-- 🛡️ **Code Quality Guards** — Automated review and quality enforcement skills.
-- 📦 **Plug & Play** — Drop skills into your project and start using them immediately.
+- 🤖 **25 Ready-to-Use Skills** — Drop into any `.agents/skills/` directory and go.
+- 🛡️ **6 Quality Guards** — Automated review for code, tests, docs, WordPress, and WooCommerce.
+- 🔀 **6 Delegate Skills** — Farm out tasks to Codex, Grok, Kimi, OpenCode, AGY, or a local LLM.
+- 🎨 **3 Design Skills** — Frontend design, UI polish, and architecture visualization.
+- 🔄 **Automation & Workflow** — Loop execution, Finn CI/CD pipeline, and ComfyUI generation.
+
+### Skills Catalog
+
+#### 🛡️ Code Quality Guards
+
+| Skill | Description |
+|---|---|
+| [`clean-code-guard`](skills/clean-code-guard/) | Review production code using Clean Code, SOLID, DRY, KISS, and YAGNI principles |
+| [`clean-architecture-guard`](skills/clean-architecture-guard/) | Restructure spaghetti code + enforce SOLID with zero hallucinations |
+| [`test-guard`](skills/test-guard/) | Review test code against universal testing rules before shipping |
+| [`docs-guard`](skills/docs-guard/) | Review documentation for accuracy against source code |
+| [`wp-guard`](skills/wp-guard/) | Review WordPress plugins, themes, and blocks for security and best practices |
+| [`woo-guard`](skills/woo-guard/) | Review WooCommerce extensions for HPOS compatibility and CRUD discipline |
+
+#### 🔀 Delegate Skills
+
+| Skill | Description |
+|---|---|
+| [`agy-delegate`](skills/agy-delegate/) | Delegate tasks to Google Antigravity CLI as a background implementer |
+| [`codex-delegate`](skills/codex-delegate/) | Delegate tasks to OpenAI Codex CLI |
+| [`grok-delegate`](skills/grok-delegate/) | Delegate tasks to Grok Build CLI |
+| [`kimi-delegate`](skills/kimi-delegate/) | Delegate tasks to Kimi Code CLI |
+| [`opencode-delegate`](skills/opencode-delegate/) | Delegate tasks to OpenCode CLI |
+| [`local-ai-delegate`](skills/local-ai-delegate/) | Delegate to a local llama.cpp model via HTTP API |
+
+#### 🎨 Design & Frontend
+
+| Skill | Description |
+|---|---|
+| [`frontend-design`](skills/frontend-design/) | Distinctive, intentional visual design guidance for new UI |
+| [`impeccable`](skills/impeccable/) | Redesign, polish, audit, and perfect any frontend interface |
+| [`archify`](skills/archify/) | Create architecture, workflow, and sequence diagrams as explorable HTML |
+
+#### 🔄 Automation & Workflow
+
+| Skill | Description |
+|---|---|
+| [`code-refactorer`](skills/code-refactorer/) | Restructure working code to clean layered architecture |
+| [`llm-council`](skills/llm-council/) | Run decisions through a council of 5 AI advisors (Karpathy method) |
+| [`loop`](skills/loop/) | Autonomous interval execution and goal-driven metric audits |
+| [`finn-spec`](skills/finn-spec/) | Interactive interview to draft build-ready Linear issues |
+| [`finn-build`](skills/finn-build/) | Claim agent-ready issues from Linear, implement, and open PRs |
+| [`finn-review`](skills/finn-review/) | Review open PRs against linked Linear issues |
+| [`comfy_local`](skills/comfy_local/) | Generate images and videos via local ComfyUI server |
+| [`comfy_workflows`](skills/comfy_workflows/) | Proven workflow recipes for ComfyUI (Z-Image Turbo, LTX, Wan) |
+
+#### 📝 Documentation & Templates
+
+| Skill | Description |
+|---|---|
+| [`best-readme-template`](skills/best-readme-template/) | Create stunning, shield-badged README documents |
+| [`guard-skills`](skills/guard-skills/) | Shared guard skill resources and templates |
 
 ### Built With
 
+[![Markdown][markdown-shield]][markdown-url]
 [![Git][git-shield]][git-url]
 [![GitHub][github-shield]][github-url]
-[![Python][python-shield]][python-url]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -89,33 +142,25 @@ Follow these steps to get a local copy up and running.
   ```sh
   git --version
   ```
-- A **GitHub account** — [Sign up here](https://github.com/join)
+- An **AI coding assistant** that supports skills (e.g., Google Antigravity, Cursor, Windsurf)
 
 ### Installation
 
-1. **Fork** this repository (click the Fork button at the top right)
-
-2. **Clone** your fork
+1. **Clone** the repository
    ```sh
-   git clone https://github.com/<your-username>/AI-Skills.git
+   git clone https://github.com/Salafite/AI-Skills.git
    ```
 
-3. **Navigate** into the project directory
+2. **Copy the skills you need** into your project's `.agents/skills/` directory
    ```sh
-   cd AI-Skills
+   # Copy a single skill
+   cp -r AI-Skills/skills/clean-code-guard your-project/.agents/skills/
+
+   # Or copy all skills at once
+   cp -r AI-Skills/skills/* your-project/.agents/skills/
    ```
 
-4. **Create a branch** for your changes
-   ```sh
-   git checkout -b feature/your-feature-name
-   ```
-
-5. **Make your changes**, then commit and push
-   ```sh
-   git add .
-   git commit -m "feat: add your feature description"
-   git push origin feature/your-feature-name
-   ```
+3. **Verify** the skill is loaded by your AI assistant — it will automatically detect `SKILL.md` files in the `.agents/skills/` directory.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -123,19 +168,27 @@ Follow these steps to get a local copy up and running.
 
 ## Usage
 
-This repository can be used as:
-
-- **A skill library** — Browse and pick the AI skills you need for your projects.
-- **A template for custom skills** — Fork it and create your own skill definitions.
-- **An automation toolkit** — Integrate skills into your CI/CD pipelines and development workflows.
+### Copy a Single Skill
 
 ```sh
-# Example: Browse available skills
-ls skills/
-
-# Example: Copy a skill into your project
-cp -r skills/clean-code-guard .agents/skills/
+# Copy the clean-code-guard into your project
+cp -r skills/clean-code-guard /path/to/your-project/.agents/skills/
 ```
+
+### Copy All Skills
+
+```sh
+# Copy the entire skills library
+cp -r skills/* /path/to/your-project/.agents/skills/
+```
+
+### Use in Your AI Assistant
+
+Once installed, simply reference the skill by name in your AI assistant:
+- *"Review this code using clean-code-guard"*
+- *"Create a README using best-readme-template"*
+- *"Delegate this task to Codex"*
+- *"Run the LLM council on this architecture decision"*
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -145,6 +198,7 @@ cp -r skills/clean-code-guard .agents/skills/
 
 - [x] Initial repository setup
 - [x] Add comprehensive README
+- [x] Add 25 AI skill files
 - [ ] Add more AI skill definitions
 - [ ] Create GitHub Actions integration workflows
 - [ ] Add skill testing and validation framework
@@ -209,5 +263,5 @@ Project Link: [https://github.com/Salafite/AI-Skills](https://github.com/Salafit
 [git-url]: https://git-scm.com/
 [github-shield]: https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white
 [github-url]: https://github.com/
-[python-shield]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
-[python-url]: https://www.python.org/
+[markdown-shield]: https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white
+[markdown-url]: https://www.markdownguide.org/

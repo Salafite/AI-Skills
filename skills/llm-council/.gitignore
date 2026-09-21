@@ -1,0 +1,6 @@
+config.json
+*.log
+.DS_Store
+node_modules/
+council-report-*.html
+council-transcript-*.md
