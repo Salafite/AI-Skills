@@ -11,23 +11,23 @@
 <!-- Project Logo & Title -->
 <br />
 <div align="center">
-  <a href="https://github.com/Salafite/github-example">
+  <a href="https://github.com/Salafite/AI-Skills">
     <img src="https://img.icons8.com/fluency/96/github.png" alt="Logo" width="96" height="96">
   </a>
 
-  <h1 align="center">GitHub Example</h1>
+  <h1 align="center">AI Skills</h1>
 
   <p align="center">
-    A sample repository demonstrating GitHub workflows, version control best practices, and collaborative development.
+    A curated collection of AI-powered skills, workflows, and automation templates for modern development.
     <br />
-    <a href="https://github.com/Salafite/github-example"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Salafite/AI-Skills"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Salafite/github-example">View Demo</a>
+    <a href="https://github.com/Salafite/AI-Skills">View Demo</a>
     ·
-    <a href="https://github.com/Salafite/github-example/issues/new?labels=bug">Report Bug</a>
+    <a href="https://github.com/Salafite/AI-Skills/issues/new?labels=bug">Report Bug</a>
     ·
-    <a href="https://github.com/Salafite/github-example/issues/new?labels=enhancement">Request Feature</a>
+    <a href="https://github.com/Salafite/AI-Skills/issues/new?labels=enhancement">Request Feature</a>
   </p>
 </div>
 
@@ -61,13 +61,13 @@
 
 ## About The Project
 
-**GitHub Example** is a learning-oriented repository created to practice and demonstrate core GitHub skills — from repository setup and branching to pull requests and issue tracking. Whether you're a student getting started with Git or a developer brushing up on collaboration workflows, this repo serves as a hands-on reference.
+**AI Skills** is a curated collection of AI-powered skills, automation workflows, and intelligent templates designed to supercharge your development process. From code generation and review to automated testing and deployment, this repository provides ready-to-use skills that integrate with modern AI coding assistants.
 
 Key highlights:
-- 🔀 **Version Control** — Practice branching, merging, and resolving conflicts.
-- 📝 **Issue Tracking** — Use GitHub Issues to manage tasks and bugs.
-- 🤝 **Collaboration** — Learn the fork → branch → PR workflow.
-- 📂 **Project Organization** — Explore best practices for repository structure.
+- 🤖 **AI-Powered Skills** — Ready-to-use skill definitions for AI coding assistants.
+- 🔄 **Automation Workflows** — Streamline repetitive tasks with intelligent automation.
+- 🛡️ **Code Quality Guards** — Automated review and quality enforcement skills.
+- 📦 **Plug & Play** — Drop skills into your project and start using them immediately.
 
 ### Built With
 
@@ -97,12 +97,12 @@ Follow these steps to get a local copy up and running.
 
 2. **Clone** your fork
    ```sh
-   git clone https://github.com/<your-username>/github-example.git
+   git clone https://github.com/<your-username>/AI-Skills.git
    ```
 
 3. **Navigate** into the project directory
    ```sh
-   cd github-example
+   cd AI-Skills
    ```
 
 4. **Create a branch** for your changes
@@ -125,16 +125,16 @@ Follow these steps to get a local copy up and running.
 
 This repository can be used as:
 
-- **A Git/GitHub learning sandbox** — Practice commits, branches, merges, and rebases without risk.
-- **A template for new projects** — Fork it and adapt the structure for your own work.
-- **An assignment submission hub** — Upload and organize coursework with proper version control.
+- **A skill library** — Browse and pick the AI skills you need for your projects.
+- **A template for custom skills** — Fork it and create your own skill definitions.
+- **An automation toolkit** — Integrate skills into your CI/CD pipelines and development workflows.
 
 ```sh
-# Example: Check the commit history
-git log --oneline --graph --all
+# Example: Browse available skills
+ls skills/
 
-# Example: Create a new branch for an assignment
-git checkout -b assignment/week-3
+# Example: Copy a skill into your project
+cp -r skills/clean-code-guard .agents/skills/
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -145,12 +145,12 @@ git checkout -b assignment/week-3
 
 - [x] Initial repository setup
 - [x] Add comprehensive README
-- [ ] Add sample project files with documentation
-- [ ] Create GitHub Actions CI/CD workflow
-- [ ] Add branch protection rules guide
-- [ ] Include pull request template
+- [ ] Add more AI skill definitions
+- [ ] Create GitHub Actions integration workflows
+- [ ] Add skill testing and validation framework
+- [ ] Include skill authoring guide and templates
 
-See the [open issues](https://github.com/Salafite/github-example/issues) for a full list of proposed features and known issues.
+See the [open issues](https://github.com/Salafite/AI-Skills/issues) for a full list of proposed features and known issues.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -182,7 +182,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 **Salafite** — [@Salafite](https://github.com/Salafite)
 
-Project Link: [https://github.com/Salafite/github-example](https://github.com/Salafite/github-example)
+Project Link: [https://github.com/Salafite/AI-Skills](https://github.com/Salafite/AI-Skills)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -197,14 +197,14 @@ Project Link: [https://github.com/Salafite/github-example](https://github.com/Sa
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[stars-shield]: https://img.shields.io/github/stars/Salafite/github-example.svg?style=for-the-badge
-[stars-url]: https://github.com/Salafite/github-example/stargazers
-[forks-shield]: https://img.shields.io/github/forks/Salafite/github-example.svg?style=for-the-badge
-[forks-url]: https://github.com/Salafite/github-example/network/members
-[issues-shield]: https://img.shields.io/github/issues/Salafite/github-example.svg?style=for-the-badge
-[issues-url]: https://github.com/Salafite/github-example/issues
-[license-shield]: https://img.shields.io/github/license/Salafite/github-example.svg?style=for-the-badge
-[license-url]: https://github.com/Salafite/github-example/blob/main/LICENSE
+[stars-shield]: https://img.shields.io/github/stars/Salafite/AI-Skills.svg?style=for-the-badge
+[stars-url]: https://github.com/Salafite/AI-Skills/stargazers
+[forks-shield]: https://img.shields.io/github/forks/Salafite/AI-Skills.svg?style=for-the-badge
+[forks-url]: https://github.com/Salafite/AI-Skills/network/members
+[issues-shield]: https://img.shields.io/github/issues/Salafite/AI-Skills.svg?style=for-the-badge
+[issues-url]: https://github.com/Salafite/AI-Skills/issues
+[license-shield]: https://img.shields.io/github/license/Salafite/AI-Skills.svg?style=for-the-badge
+[license-url]: https://github.com/Salafite/AI-Skills/blob/main/LICENSE
 [git-shield]: https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white
 [git-url]: https://git-scm.com/
 [github-shield]: https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white
