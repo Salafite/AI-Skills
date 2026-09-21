@@ -61,10 +61,10 @@
 
 ## About The Project
 
-**AI Skills** is a curated collection of **16 AI-powered skills** for AI coding assistants like [Google Antigravity](https://github.com/google/anthropic), [Codex CLI](https://github.com/openai/codex), [Grok Build](https://x.ai), and others. Each skill is a self-contained `SKILL.md` file that teaches your AI assistant specialized workflows — from code review and architecture refactoring to generating images with ComfyUI.
+**AI Skills** is a curated collection of **15 AI-powered skills** for AI coding assistants like [Google Antigravity](https://github.com/google/anthropic), [Codex CLI](https://github.com/openai/codex), [Grok Build](https://x.ai), and others. Each skill is a self-contained `SKILL.md` file that teaches your AI assistant specialized workflows — from code review and architecture refactoring to generating images with ComfyUI.
 
 Key highlights:
-- 🤖 **16 Ready-to-Use Skills** — Drop into any `.agents/skills/` directory and go.
+- 🤖 **15 Ready-to-Use Skills** — Drop into any `.agents/skills/` directory and go.
 - 🛡️ **3 Quality Guards** — Automated review for code architecture, tests, and docs.
 - 🔀 **1 Delegate Skill** — Farm out tasks to a local LLM.
 - 🎨 **2 Design Skills** — Frontend design and architecture visualization.
@@ -111,7 +111,6 @@ Key highlights:
 | Skill | Description |
 |---|---|
 | [`best-readme-template`](skills/best-readme-template/) | Create stunning, shield-badged README documents |
-| [`guard-skills`](skills/guard-skills/) | Shared guard skill resources and templates |
 
 ### Built With
 
@@ -189,7 +188,7 @@ Once installed, simply reference the skill by name in your AI assistant:
 
 - [x] Initial repository setup
 - [x] Add comprehensive README
-- [x] Add 16 AI skill files
+- [x] Add 15 AI skill files
 - [ ] Add more AI skill definitions
 - [ ] Create GitHub Actions integration workflows
 - [ ] Add skill testing and validation framework
