@@ -1,0 +1,25 @@
+name: Skill Catalog Check
+
+on:
+  push:
+    paths:
+      - 'skills/**'
+      - 'README.md'
+  pull_request:
+    paths:
+      - 'skills/**'
+      - 'README.md'
+
+jobs:
+  catalog-sync:
+    name: Verify README ↔ Skills Sync
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check catalog sync
+        run: |
+          chmod +x scripts/check-catalog-sync.sh
+          bash scripts/check-catalog-sync.sh

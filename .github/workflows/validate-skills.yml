@@ -1,0 +1,23 @@
+name: Validate Skills
+
+on:
+  push:
+    paths:
+      - 'skills/**'
+  pull_request:
+    paths:
+      - 'skills/**'
+
+jobs:
+  validate:
+    name: Validate SKILL.md Files
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate all skills
+        run: |
+          chmod +x scripts/validate-skills.sh
+          bash scripts/validate-skills.sh

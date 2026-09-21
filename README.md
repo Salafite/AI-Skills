@@ -49,6 +49,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#skill-authoring">Skill Authoring</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -61,14 +62,16 @@
 
 ## About The Project
 
-**AI Skills** is a curated collection of **15 AI-powered skills** for AI coding assistants like [Google Antigravity](https://github.com/google/anthropic), [Codex CLI](https://github.com/openai/codex), [Grok Build](https://x.ai), and others. Each skill is a self-contained `SKILL.md` file that teaches your AI assistant specialized workflows — from code review and architecture refactoring to generating images with ComfyUI.
+**AI Skills** is a curated collection of **20 AI-powered skills** for AI coding assistants like [Google Antigravity](https://github.com/google/anthropic), [Codex CLI](https://github.com/openai/codex), [Grok Build](https://x.ai), and others. Each skill is a self-contained `SKILL.md` file that teaches your AI assistant specialized workflows — from code review and architecture refactoring to generating images with ComfyUI.
 
 Key highlights:
-- 🤖 **15 Ready-to-Use Skills** — Drop into any `.agents/skills/` directory and go.
-- 🛡️ **3 Quality Guards** — Automated review for code architecture, tests, and docs.
+- 🤖 **20 Ready-to-Use Skills** — Drop into any `.agents/skills/` directory and go.
+- 🛡️ **6 Quality Guards** — Automated review for code, API design, commits, tests, docs, and security.
 - 🔀 **1 Delegate Skill** — Farm out tasks to a local LLM.
 - 🎨 **2 Design Skills** — Frontend design and architecture visualization.
 - 🔄 **Automation & Workflow** — Loop execution, Finn CI/CD pipeline, and ComfyUI generation.
+- 📝 **3 Documentation Skills** — README templates, changelogs, and prompt engineering.
+- 🔧 **CI/CD Integration** — GitHub Actions workflows for skill validation.
 
 ### Skills Catalog
 
@@ -79,6 +82,9 @@ Key highlights:
 | [`clean-architecture-guard`](skills/clean-architecture-guard/) | Restructure spaghetti code + enforce SOLID with zero hallucinations |
 | [`test-guard`](skills/test-guard/) | Review test code against universal testing rules before shipping |
 | [`docs-guard`](skills/docs-guard/) | Review documentation for accuracy against source code |
+| [`api-design-guard`](skills/api-design-guard/) | Review REST/GraphQL APIs for naming, status codes, and error handling |
+| [`git-commit-guard`](skills/git-commit-guard/) | Enforce Conventional Commits format and message quality |
+| [`security-audit`](skills/security-audit/) | Scan code for OWASP Top 10 vulnerabilities and hardcoded secrets |
 
 #### 🔀 Delegate Skills
 
@@ -111,6 +117,8 @@ Key highlights:
 | Skill | Description |
 |---|---|
 | [`best-readme-template`](skills/best-readme-template/) | Create stunning, shield-badged README documents |
+| [`changelog-generator`](skills/changelog-generator/) | Auto-generate CHANGELOG.md from git history using Conventional Commits |
+| [`prompt-engineer`](skills/prompt-engineer/) | Craft, iterate, and optimize LLM prompts with structured methodology |
 
 ### Built With
 
@@ -184,15 +192,40 @@ Once installed, simply reference the skill by name in your AI assistant:
 
 ---
 
+## Skill Authoring
+
+Want to create your own skill? We've got you covered:
+
+- 📖 **[Authoring Guide](docs/AUTHORING_GUIDE.md)** — Step-by-step guide to creating a new skill
+- 📄 **[Skill Template](templates/skill-template/SKILL.md)** — Copy-paste starter template
+- 🔍 **[Validation Script](scripts/validate-skills.sh)** — Validate your skill before submitting
+- 🔗 **[Catalog Sync Check](scripts/check-catalog-sync.sh)** — Ensure README stays in sync
+
+```sh
+# Quick start: create a new skill from template
+cp -r templates/skill-template skills/my-new-skill
+
+# Edit the SKILL.md with your instructions
+# Then validate it
+bash scripts/validate-skills.sh
+```
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+---
+
 ## Roadmap
 
 - [x] Initial repository setup
 - [x] Add comprehensive README
-- [x] Add 15 AI skill files
-- [ ] Add more AI skill definitions
-- [ ] Create GitHub Actions integration workflows
-- [ ] Add skill testing and validation framework
-- [ ] Include skill authoring guide and templates
+- [x] Add 20 AI skill files
+- [x] Add more AI skill definitions
+- [x] Create GitHub Actions integration workflows
+- [x] Add skill testing and validation framework
+- [x] Include skill authoring guide and templates
+- [ ] Add skill discovery CLI tool
+- [ ] Create skill dependency system
+- [ ] Build interactive skill browser web app
 
 See the [open issues](https://github.com/Salafite/AI-Skills/issues) for a full list of proposed features and known issues.
 
